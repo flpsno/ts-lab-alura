@@ -67,9 +67,7 @@ System.register(["../views/index", "../models/index", "../helpers/decorators/ind
                             .forEach(negociacao => this._negociacoes.adiciona(negociacao));
                         this._negociacoesView.update(this._negociacoes);
                     })
-                        .catch(err => {
-                        this._mensagemView.update(err.message);
-                    });
+                        .catch(err => this._mensagemView.update(err.message));
                 }
             };
             __decorate([
