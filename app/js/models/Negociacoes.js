@@ -20,7 +20,7 @@ System.register([], function (exports_1, context_1) {
                     console.log(JSON.stringify(this._negociacoes));
                 }
                 ehIgual(negociacoes) {
-                    return JSON.stringify(this._negociacoes) == JSON.stringify(negociacoes.paraArray);
+                    return JSON.stringify(this._negociacoes) == JSON.stringify(negociacoes);
                 }
             };
             exports_1("Negociacoes", Negociacoes);
